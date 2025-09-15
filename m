@@ -20,4 +20,20 @@ void outputArrayData(double *output){
   cout << endl;
 }
 
-  
+double sumArray(double *data){
+ double sum = 0;
+ for (int i=0; i<=4; i++){
+  sum += *(data+i);
+  }
+  return sum;
+  }
+
+int main(){
+ double *arr = new double[5];
+ enterArrayData(arr);
+ outputArrayData(arr);
+    
+cout <<"Sum of Values: " << sumArray(arr) << endl;
+delete[] arr;
+return 0;
+}
