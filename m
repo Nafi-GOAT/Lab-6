@@ -1,15 +1,15 @@
 #include <iostream>
 #include <ctime>
-using namespcae std;
+using namespace std;
 
 
-void entryArrayData(double *enter){
+void enterArrayData(double *enter){
  cout << "Data entry for the array: " << endl;
- for(int i=0; i<=4 ; i++){
- cout << "> Element #" << i << ".";
+ for(int i=0; i<=4; i++){
+ cout << "> Element #" << i << ":";
   cin >> *(enter+i);
   }
-  cout << "DAta entry complete." << endl;
+  cout << "Data entry complete." << endl;
 }
 
 void outputArrayData(double *output){
@@ -33,7 +33,7 @@ int main(){
  enterArrayData(arr);
  outputArrayData(arr);
     
-cout <<"Sum of Values: " << sumArray(arr) << endl;
+cout << "Sum of Values: " << sumArray(arr) << endl;
 delete[] arr;
 return 0;
 }
